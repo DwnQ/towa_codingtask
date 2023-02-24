@@ -1,4 +1,4 @@
-{ 
+{
   "extends": "./tsconfig.extend.json",
   "compilerOptions": {
     "target": "es5",
@@ -20,8 +20,9 @@
       "@components/*": ["./components/*"],
       "@pages/*": ["./pages/*"],
       "@api/*": ["./api/*"],
+      "@constants/*": ["./constants/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/dashboard"],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules"]
 }

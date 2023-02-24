@@ -3,9 +3,7 @@ import Header from "@components/Header";
 import { Outlet } from "react-router-dom";
 import Footer from "@components/Footer";
 
-interface Props {
-  children: ReactNode;
-}
+interface Props {}
 
 const Layout: FC<Props> = () => {
   return (

@@ -1,84 +1,46 @@
 {
+  "extends": "./tsconfig.extend.json",
 
-    "extends":"./tsconfig.extend.json",
- 
-    "compilerOptions":{
- 
-       "target":"es5",
- 
-       "lib":[
- 
-          "dom",
- 
-          "dom.iterable",
- 
-          "esnext"
- 
-       ],
- 
-       "allowJs":true,
- 
-       "skipLibCheck":true,
- 
-       "strict":true,
- 
-       "forceConsistentCasingInFileNames":true,
- 
-       "noEmit":true,
- 
-       "esModuleInterop":true,
- 
-       "module":"esnext",
- 
-       "moduleResolution":"node",
- 
-       "resolveJsonModule":true,
- 
-       "isolatedModules":true,
- 
-       "jsx":"preserve",
- 
-       "incremental":true,
- 
-       "baseUrl":"./src",
- 
-       "paths":{
- 
-          "@components/*":[
- 
-             "./components/*"
- 
-         ],
-         "@pages/*":[
- 
-            "./pages/*"
+  "compilerOptions": {
+    "target": "es5",
 
-         ] ,         
-         "@api/*":[
- 
-            "./api/*"
+    "lib": ["dom", "dom.iterable", "esnext"],
 
-         ]
-       }
- 
-    },
- 
-    "include":[
- 
-       "next-env.d.ts",
- 
-       "**/*.ts",
- 
-       "**/*.tsx",
- 
-       "pages/dashboard"
- 
-    ],
- 
-    "exclude":[
- 
-       "node_modules"
- 
-    ]
- 
- }
+    "allowJs": true,
+
+    "skipLibCheck": true,
+
+    "strict": true,
+
+    "forceConsistentCasingInFileNames": true,
+
+    "noEmit": true,
+
+    "esModuleInterop": true,
+
+    "module": "esnext",
+
+    "moduleResolution": "node",
+
+    "resolveJsonModule": true,
+
+    "isolatedModules": true,
+
+    "jsx": "preserve",
+
+    "incremental": true,
+
+    "baseUrl": "./src",
+
+    "paths": {
+      "@components/*": ["./components/*"],
+      "@pages/*": ["./pages/*"],
+      "@api/*": ["./api/*"],
+      "@constants/*": ["./constants/*"]
+    }
+  },
+
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/dashboard"],
+
+  "exclude": ["node_modules"]
+}
