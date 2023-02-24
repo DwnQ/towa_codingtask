@@ -2,10 +2,10 @@ import React, { FC, ReactNode } from "react";
 import "./App.css";
 import Layout from "@components/Layout";
 import Home from "@pages/Home";
-import About from "@pages/About";
-import Dashboard from "@pages/Dashboard";
+import Api from "@pages/Api";
 import NotFound from "@pages/NotFound";
 import { Routes, Route, Outlet, Link } from "react-router-dom";
+import Grid from "@pages/Grid";
 
 const App = () => {
   return (
@@ -13,12 +13,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="dashboard" element={<Dashboard />} />
-
-          {/* Using path="*"" means "match anything", so this route
-                acts like a catch-all for URLs that we don't have explicit
-                routes for. */}
+          <Route path="grid" element={<Grid />} />
+          <Route path="api" element={<Api />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
