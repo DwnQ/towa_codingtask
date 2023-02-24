@@ -20,7 +20,7 @@ As detailed in the given Document this Project contains the following:
 
 ### Pages
 
-- API
+- API - pokeapi.co
   - Contains a Input-Field to search for specific Pokemon by ID or name.
 - GRID - https://gist.github.com/dpetersen/1237910
   - Contains a responsive Data-Grid with static values.
